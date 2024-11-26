@@ -1,39 +1,63 @@
 /* Header 组件的样式 */
 .header {
-  background: linear-gradient(to bottom, hwb(0 96% 4%, 0.5), transparent);
-  color: #ffffff; /* 文字颜色 */
-  padding: 10px 0; /* 垂直内边距 */
+  background-color: rgba(61, 54, 93, 0.9);
+  margin: 12px;
+  padding-left: 12px;
+  border-radius: 12px;
 }
 
 .container {
   display: flex;
-  justify-content: flex-start; /* 两端对齐 */
-  align-items: center; /* 垂直居中 */
-  max-width: 1200px; /* 最大宽度 */
-  margin: 0 auto; /* 水平居中 */
-  padding: 0 20px; /* 水平内边距 */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
 }
 
 .logo-link img {
-  height: 60px; /* Logo 图片高度 */
+  height: 100px;
+  padding: 12px; 
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #ffffff;
+  cursor: pointer;
+  /* -webkit-animation: light 1.5s ease-in-out infinite alternate; // 闪爆眼睛动画，可开
+}
+@-webkit-keyframes light {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0000ff,
+      0 0 70px #8484d0, 0 0 80px #0000ff, 0 0 100px #0000ff, 0 0 150px #0000ff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #0000ff,
+      0 0 35px #0000ff, 0 0 40px #0000ff, 0 0 50px #0000ff, 0 0 75px #0000ff;
+  } */
 }
 
 .nav-list {
   list-style: none; /* 移除列表样式 */
   display: flex; /* 使用 flex 布局 */
+  padding-right: 100px;
 }
 
 .nav-item {
-  margin-left: 20px; /* 导航项之间的间距 */
+  padding: 20px; /* 导航项之间的间距 */
 }
 
 .nav-link {
   text-decoration: none; /* 移除下划线 */
-  color: rgb(2, 2, 2); /* 文字颜色 */
-  font-size: 16px; /* 字体大小 */
-  transition: color 0.3s ease; /* 颜色变化的过渡效果 */
+  color: white; /* 文字颜色 */
+  font-size: 20px;
+  transition: color 0.1s ease;
 }
 
 .nav-link:hover {
-  color: #6c5ee6; /* 悬停时的文字颜色 */
+  color: #6c5ee6;
 }

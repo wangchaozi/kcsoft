@@ -11,10 +11,10 @@ html, body {
   left: 0;
   right: 0;
   /* background-color: #fff; 根据需要设置背景颜色 */
-  z-index: 1000; /* 确保 header 在其他内容之上 */
+  /* z-index: 1000; 确保 header 在其他内容之上 */
   /* 添加适当的高度和内边距 */
-  height: 60px; /* 根据实际高度调整 */
-  padding: 0 20px;
+  /* height: 60px; 根据实际高度调整 */
+  /* padding:  20px; */
 }
 
 /* 设置 main-content 占据剩余空间 */

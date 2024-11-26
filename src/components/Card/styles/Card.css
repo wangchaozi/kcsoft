@@ -1,0 +1,16 @@
+.card {
+  border-radius: 12px;
+  background-color: rgb(230, 215, 215);
+  display: flex;
+  align-items: center;
+}
+
+.img {
+  width: 200px;
+  height: 100%;
+  margin: 20px;
+  border-radius: 12px;
+}
+
+.description {
+  margin: 20px}

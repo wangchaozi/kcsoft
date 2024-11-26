@@ -9,7 +9,7 @@ import FooterControl from './components/FooterControl';
 function App() {
 
   return (
-    <>
+    <div className='app'>
       <BrowserRouter>
         <div className="header">
           <Header />
@@ -18,7 +18,8 @@ function App() {
           {routers}
         </div>
     </BrowserRouter>
-    </>
+    <Footer></Footer>
+    </div>
   )
 }
 
