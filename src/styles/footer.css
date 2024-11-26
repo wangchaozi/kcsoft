@@ -1,0 +1,28 @@
+/* footer.css */
+.custom-footer {
+    background-color: hsla(250, 85%, 11%, 0.8); /* 背景颜色和透明度 */
+    color: #fff; /* 文字颜色 */
+    text-align: center; /* 文本居中 */
+    padding: 10px 0; /* 垂直内边距 */
+    font-size: 14px; /* 字体大小 */
+    line-height: 1.5; /* 行高 */
+    position: fixed; /* 固定定位 */
+    bottom: 0; /* 紧贴屏幕底部 */
+    left: 0;
+    right: 0;
+    z-index: 1000; /* 确保 footer 在其他内容之上 */
+    transition: opacity 0.3s ease; /* 过渡效果 */
+  }
+  
+  /* 为 Footer 内的段落添加样式 */
+  .custom-footer p {
+    margin: 0; /* 移除段落的外边距 */
+  }
+  
+  /* 响应式设计 */
+  @media (max-width: 768px) {
+    .custom-footer {
+      font-size: 12px; /* 在小屏幕上减小字体大小 */
+      padding: 8px 0; /* 减小内边距 */
+    }
+  }

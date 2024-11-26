@@ -1,0 +1,38 @@
+/* 确保根元素占满整个视口高度 */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* 设置 header 固定在顶部 */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* background-color: #fff; 根据需要设置背景颜色 */
+  z-index: 1000; /* 确保 header 在其他内容之上 */
+  /* 添加适当的高度和内边距 */
+  height: 60px; /* 根据实际高度调整 */
+  padding: 0 20px;
+}
+
+/* 设置 main-content 占据剩余空间 */
+.main-content {
+  padding-top: 60px; /* 与 header 高度相匹配 */
+  padding-bottom: 60px; /* 为 footer 预留空间 */
+  /* 根据需要添加内边距 */
+  padding-left: 20px;
+  padding-right: 20px;
+  /* 如果使用 flexbox，可以这样设置 */
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  /* 如果不是 flexbox，可以省略 flex 相关属性 */
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+    display: none; /* 在移动设备上隐藏导航菜单，可以使用汉堡菜单替代 */
+  }
+}

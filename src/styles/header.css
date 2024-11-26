@@ -1,0 +1,39 @@
+/* Header 组件的样式 */
+.header {
+  background: linear-gradient(to bottom, hwb(0 96% 4%, 0.5), transparent);
+  color: #ffffff; /* 文字颜色 */
+  padding: 10px 0; /* 垂直内边距 */
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start; /* 两端对齐 */
+  align-items: center; /* 垂直居中 */
+  max-width: 1200px; /* 最大宽度 */
+  margin: 0 auto; /* 水平居中 */
+  padding: 0 20px; /* 水平内边距 */
+}
+
+.logo-link img {
+  height: 60px; /* Logo 图片高度 */
+}
+
+.nav-list {
+  list-style: none; /* 移除列表样式 */
+  display: flex; /* 使用 flex 布局 */
+}
+
+.nav-item {
+  margin-left: 20px; /* 导航项之间的间距 */
+}
+
+.nav-link {
+  text-decoration: none; /* 移除下划线 */
+  color: rgb(2, 2, 2); /* 文字颜色 */
+  font-size: 16px; /* 字体大小 */
+  transition: color 0.3s ease; /* 颜色变化的过渡效果 */
+}
+
+.nav-link:hover {
+  color: #6c5ee6; /* 悬停时的文字颜色 */
+}
