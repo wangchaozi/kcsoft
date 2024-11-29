@@ -11,14 +11,19 @@ function App() {
   return (
     <div className='app'>
       <BrowserRouter>
-        <div className="header">
-          <Header />
+        <div>
+          <div className="header">
+            <Header />
+          </div>
+          <div className="main-content">
+            {routers}
+          </div>
         </div>
-        <div className="main-content">
+        {/* <div className="main-content">
           {routers}
-        </div>
+        </div> */}
     </BrowserRouter>
-    <Footer></Footer>
+    {/* <Footer></Footer> */}
     </div>
   )
 }

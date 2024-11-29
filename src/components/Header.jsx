@@ -13,7 +13,9 @@ const Header = () => {
               <img src={logoImage} alt="实验室官网 Logo" />
             </Link>
           </div>
+          <Link to="/" className="logo-link">
           <div className='title'>西安科技大学校软件实验室</div>
+          </Link>
         </div>
         <nav className="nav">
           <ul className="nav-list">
@@ -36,7 +38,7 @@ const Header = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/contact" className="nav-link">
+              <Link to="/activity" className="nav-link">
                 校软活动
               </Link>
             </li>

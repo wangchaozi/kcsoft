@@ -1,0 +1,9 @@
+.carousel-container {
+    position: relative;
+    width: 100vw; /* 占据整个视口宽度 */
+    height: 100vh; /* 占据整个视口高度 */
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    overflow: hidden; /* 防止内容溢出 */
+  }

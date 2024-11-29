@@ -1,9 +1,10 @@
 /* Header 组件的样式 */
 .header {
-  background-color: rgba(61, 54, 93, 0.9);
-  margin: 12px;
-  padding-left: 12px;
-  border-radius: 12px;
+  /* background-color: rgba(61, 54, 93, 0.9); */
+  background: linear-gradient(to bottom, rgba(61, 54, 93, 0.8), transparent);
+  margin: 1px;
+  padding-left: 0px;
+  border-radius: 0px;
 }
 
 .container {

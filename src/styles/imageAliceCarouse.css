@@ -1,0 +1,75 @@
+
+/* 使按钮位于轮播图片之上 */
+.alice-carousel__dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.alice-carousel__dot {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.alice-carousel__dot--active {
+  opacity: 1;
+}
+
+.alice-carousel__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.alice-carousel__btn--prev {
+  left: 10px;
+}
+
+.alice-carousel__btn--next {
+  right: 10px;
+}
+
+.alice-carousel__btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* 使轮播图片占据整个容器 */
+.alice-carousel__stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.alice-carousel__slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alice-carousel__slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
