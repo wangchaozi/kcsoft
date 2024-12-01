@@ -12,15 +12,20 @@ const ImageAliceCarousel = ({ items, autoPlay, autoPlayInterval, infinite }) => 
     };
 
     return (
-        <AliceCarousel
-        mouseTracking
-        items={items}
-        responsive={responsive}
-        controlsStrategy="alternate"
-        autoPlay={autoPlay}
-        autoPlayInterval={autoPlayInterval}
-        infinite={infinite}
-        />
+            <AliceCarousel
+                mouseTracking
+                stagePadding={0}
+                items={items.map((item, index) => (
+                    <div key={index}>
+                        <img src={item} alt={`Slide ${index}`} />
+                    </div>
+                ))}
+                responsive={responsive}
+                controlsStrategy="alternate"
+                autoPlay={autoPlay}
+                autoPlayInterval={autoPlayInterval}
+                infinite={infinite}
+            />
     );
 };
 
