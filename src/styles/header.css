@@ -60,5 +60,10 @@
 }
 
 .nav-link:hover {
-  color: #6c5ee6;
+  color: rgba(61, 54, 93);
+}
+
+.nav-link.active {
+  color: rgba(61, 54, 93); /* 你可以根据需要更改颜色 */
+  font-weight: bold;
 }
